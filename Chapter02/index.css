@@ -1,0 +1,78 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+}
+
+section {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+	outline: 1px gray dotted;
+	padding: 1rem;
+	gap: 1rem;
+}
+
+section svg {
+	margin: auto;
+}
+
+#a-single-data-set {
+	background-color: rgba(42, 42, 42, .42);
+}
+
+#two-data-sets {
+	background-color: rgba(200, 12, 55, 0.8);
+}
+
+#animating-list-items {
+	background-color: rgba(50, 50, 222, 0.8);
+}
+
+.title {
+	width: 100%;
+	text-align: center;
+	box-shadow: 1px 1px 4px 3px gray;
+}
+
+.text-wrapper {
+	width: 100%;
+}
+
+.text-wrapper-title {
+	background-color: #42424242;
+	word-break: break-all;
+	font-size: 12px;
+	font-style: italic;
+	padding: 0.25rem;
+	border-radius: 0.25rem 0.25rem 0 0;
+	max-width: 80%;
+}
+
+.text-wrapper-body {
+	white-space: pre;
+	text-align: left;
+	background-color: lightblue;
+	padding: 0.5rem;
+	border-radius: 0 0.25rem 0.25rem 0.25rem;
+	font-size: 15px;
+	font-family: 'Source Code Pro', monospace;
+	max-height: 500px;
+	overflow: hidden;
+}
+
+.d3-input {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.25rem;
+	margin: 0.5rem auto;
+	outline: 1px gray solid;
+}
