@@ -1,12 +1,3 @@
-/**
- * Will generate a graph for a given data set.
- * data is an array of objects: 
-​ * columns: Array [ "x", "y" ]
- * 0: Object { x: "100", y: "50" }
- * ...
- * svg_selector is the svg where the data will
- * be displayed with circles.
- **/
 const graphSimpleDataSet = (data, svg_selector = "#a-single-data-set") => {
   d3.select( svg_selector )
     .selectAll( "circle" )
@@ -22,7 +13,6 @@ const graphSimpleDataSet = (data, svg_selector = "#a-single-data-set") => {
 };
 
 const updateSimpleDataSet = (file) => {
-  console.log(file);
   var file_reader = new FileReader();
   file_reader.onload = function() {
     d3.select('#simple-data-set-title').text(file.name);

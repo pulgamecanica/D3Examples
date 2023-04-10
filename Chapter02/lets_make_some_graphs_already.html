@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
+  <center><h1>Chapter 02</h1></center>
   <section>
     <h1 class="title">A Single Data Set</h1>
     <span class="d3-input">
@@ -30,7 +31,7 @@
 500 250</div>
       </div>
     </span>
-    <svg id="a-single-data-set" width="600" height="300"/>
+    <svg class="svg1" id="a-single-data-set"/>
   </section>
 
   <section>
@@ -41,21 +42,38 @@
       <hr>
       <div class="text-wrapper">
         <div id="two-data-sets-title" class="text-wrapper-title">Default.tsv</div>
-        <div id="two-data-sets-file-body" class="text-wrapper-body">x   y1  y2
-100 50  200
-200 100 322
-300 150 432
-400 200 34
-500 250 324</div>
+        <div id="two-data-sets-file-body" class="text-wrapper-body">x   y1    y2
+1.0 0.001 0.63
+3.0 0.003 0.84
+4.0 0.024 0.56
+4.5 0.054 0.22
+4.6 0.062 0.15
+5.0 0.100 0.08
+6.0 0.176 0.20
+8.0 0.198 0.71
+9.0 0.199 0.65</div>
       </div>
       
     </span>
-    <svg id="two-data-sets" width="600" height="300"/>
+    <svg class="svg2" id="two-data-sets"/>
+    <svg class="svg2" id="two-data-sets-scales"/>
   </section>
 
   <section>
     <h1 class="title">Animating List Items</h1>
-    <svg id="animating-list-items" width="600" height="300"/>
+    <span class="d3-input">
+      <h5>[Add more items manually]</h5>
+      <input type="text" name="list-text-input" id="list-text-input" placeholder="New Item">
+      <button type="submit" id="list-submit-input" >Add Item</button>
+      <hr>
+      <div class="text-wrapper">
+        <div id="animating-list-title" class="text-wrapper-title">Selected Items</div>
+        <div id="animating-list-body" class="text-wrapper-body"></div>
+      </div>
+    </span>
+    <div id="list-container">
+      
+    </div>
   </section>
 </body>
 </html>
