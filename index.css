@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +8,7 @@
 
 body {
   background-color: rgba(200, 200, 200, 0.15);
+  padding-top: 1.5rem;
 }
 
 section {
@@ -18,6 +21,44 @@ section {
   outline: 1px gray dotted;
   padding: 1rem;
   gap: 1rem;
+}
+
+section svg {
+  animation: fadeInLeft;
+  animation-duration: 1s;
+}
+
+#navbar {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  background-color: lightgray;
+  position: fixed;
+  top: 0;
+  transition: top 0.3s;
+  font-family: 'Source Code Pro', monospace;
+}
+
+#navbar p, #navbar a {
+  width: 100%;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.15rem;
+}
+
+#navbar a {
+  background-color: rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+}
+
+#navbar a:hover {
+  opacity: 0.7;
 }
 
 section svg, #list-container {
