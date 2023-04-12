@@ -4,9 +4,9 @@
   <title>D3 for the Impatient</title>
   <meta charset="utf-8">
   <link rel="icon" type="image/x-icon" href="./icon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <script type="text/javascript" src="d3.js"></script>
+  <script type="text/javascript" src="index.js"></script>
   <style type="text/css">
   	* {
   		margin: 0;
@@ -14,6 +14,9 @@
   		font-family: 'Source Code Pro', monospace;
   		text-align: center;
   	}
+    body {
+      padding-top: 0 !important;
+    }
   </style>
 </head>
 <body>
@@ -22,5 +25,7 @@
 	<h2><a href="./Chapter01/introduction.txt">Chapter 01</a></h2>
   <h2><a href="./Chapter02/lets_make_some_graphs_already.html">Chapter 02</a></h2>
 	<h2><a href="./Chapter03/the_heart_of_the_matter_selecting_and_binding.html">Chapter 03</a></h2>
+  <hr>
+  <div class="cards-container" id="index-cards-container"></div>
 </body>
 </html>

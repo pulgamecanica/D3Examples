@@ -1,0 +1,41 @@
+[{
+		"title": ["For the", "Impatient"],
+		"titleLead": "D3",
+		"label": "D3 Tutorial",
+		"description": "This tutorial is based on the book 'D3 for the Impatient', from Philipp K. Janert. It's will walk through each chapter showings examples and some features where I went beyond the scope of what the book explains.",
+		"imageUrl": "assets/purple-crowned-fairy-hummingbird.jpg",
+		"imageTitle": "purple crowned fairy hummingbird",
+		"type": "main",
+		"reverse": true
+	},
+	{
+		"title": ["ntroduction"],
+		"titleLead": "I",
+		"label": "Chapter 01",
+		"description": "D3 is a javascript library for manipulating Data Object Model (DOM) tree in order to represent information visualy.",
+		"imageUrl": "assets/d3Logo.png",
+		"imageTitle": "d3 logo",
+		"type": "chapter",
+		"reverse": false
+	},
+	{
+		"title": ["Let's make some", "graphs already"],
+		"titleLead": null,
+		"label": "Chapter 02",
+		"description": "This chapter will show how to plot a set of data for coordinates, and double sets (more than one axis). It will show as well how to add scales, and animate elements.",
+		"imageUrl": "assets/chapter02ss.png",
+		"imageTitle": null,
+		"type": "chapter",
+		"reverse": true
+	},
+	{
+		"title": ["ead", "last"],
+		"titleLead": "L",
+		"label": "label",
+		"description": "description",
+		"imageUrl": "imageUrl",
+		"imageTitle": "imageTitle",
+		"type": "chapter",
+		"reverse": false
+	}
+]

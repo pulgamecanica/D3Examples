@@ -61,6 +61,133 @@ section svg {
   opacity: 0.7;
 }
 
+.cards-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  min-width: 400px;
+  -webkit-box-shadow: 0 0 10px 3px black;
+  -moz-box-shadow: 0 0 10px 3px black;
+  box-shadow: 0 0 10px 3px black;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card-rev {
+  flex-direction: row-reverse;
+}
+
+.main-card .card-content {
+  width: 50%;
+}
+
+.main-card .card-image {
+  height: 200px;
+  width: 50%;
+}
+
+.chapter-card .card-content {
+  width: 66%;
+}
+
+.chapter-card .card-image {
+  width: 33%;
+}
+
+.card .card-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: auto;
+  min-height: 200px;
+}
+
+.card .card-image p {
+  color: white;
+  position: absolute;
+  bottom: 2.5%;
+  left: 50%;
+  font-size: 12px;
+  transform: translateX(-50%);
+  background-color: rgba(142, 142, 142, 0.75);
+  padding: 0 2px;
+  z-index: 1;
+  outline: 1px lightgray solid;
+}
+
+.card .card-content {
+  position: relative;
+  margin-left: 15px;
+  background-color: white;
+}
+
+.card-rev .card-content {
+  margin-left: 0 !important;
+  margin-right: 15px !important;
+}
+
+.card .card-content .vertical-label {
+  position: absolute;
+  transform: rotateZ(-90deg);
+  bottom: 0;
+  transform-origin: -8px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.card-rev .card-content .vertical-label {
+  left: 100% !important;
+  transform-origin: 0px 0px;
+}
+
+.card .card-content .card-title {
+  padding: 0 0.5rem;
+  font-weight: bolder;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.card .card-content .card-title .lead {
+  font-size: 60px;
+  line-height: 100%;
+  height: 55px;
+}
+
+.card .card-content .card-title .last {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card .card-content .card-title .last span {
+  text-align: left;
+  display: block;
+}
+
+.card-ruler {
+  width: 30%;
+  margin-left: 4%;
+}
+
+.card .card-content .card-description {
+  text-align: left;
+  padding: 0.75rem;
+}
+
 section svg, #list-container {
   margin: auto;
   border: 1px gray solid;
