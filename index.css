@@ -11,6 +11,18 @@ body {
   padding-top: 1.5rem;
 }
 
+.super-center {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.super-center svg {
+  margin: 0;
+}
+
+
 section {
   display: flex;
   align-items: center;
@@ -23,9 +35,18 @@ section {
   gap: 1rem;
 }
 
-section svg {
+section > svg {
   animation: fadeInLeft;
   animation-duration: 1s;
+}
+
+section .manipulating-selection-list {
+ min-width: 300px;
+ margin: auto;
+ text-align: right;
+ padding: 1rem;
+ background-color: lightcoral;
+ outline: 1px gray solid;
 }
 
 #navbar {
@@ -41,20 +62,40 @@ section svg {
   font-family: 'Source Code Pro', monospace;
 }
 
+@keyframes infiniteSlide {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(70%);
+  }
+}
+
 #navbar p, #navbar a {
-  width: 100%;
-  width: 100%;
   font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
   padding: 0.15rem;
 }
 
+#navbar p {
+  width: 100%;
+  animation: 15s infinite infiniteSlide ease-in;
+  overflow: hidden;
+  animation-delay: 60s;
+}
+
 #navbar a {
-  background-color: rgba(0, 0, 0, 0.15);
+  min-width: 10%; 
+  background-color: gray;
   text-decoration: none;
   display: inline-block;
   color: black;
+  z-index: 2;
+}
+
+#navbar p:hover {
+  animation-duration: 0s;
 }
 
 #navbar a:hover {
@@ -235,6 +276,22 @@ section svg, #list-container {
   font-family: 'Source Code Pro', monospace;
   max-height: 500px;
   overflow: hidden;
+}
+
+.text-wrapper-body table {
+  width: 100%;
+}
+
+.text-wrapper-body table > tr {
+  outline: 1px gray solid;
+}
+
+.text-wrapper-body table tr * {
+  text-align: center;
+}
+
+.text-wrapper-body table tr td td {
+  display: block;
 }
 
 .d3-input {

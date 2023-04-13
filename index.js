@@ -1,7 +1,3 @@
-function generateSingleCard(data) {
-  console.log(data);
-}
-
 const generateCards = (data) => {
   let cards =  d3.select("#index-cards-container")
     .selectAll( "div" )
@@ -42,9 +38,6 @@ const generateCards = (data) => {
     .style( "background-image",  d => "url(" + d.imageUrl + ")" )
     .append( "p" )
     .text( d => d.imageTitle )
-
-
-  console.log(data);
 }
 
 window.addEventListener("load", () => {
