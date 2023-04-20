@@ -12,18 +12,38 @@
 		"title": ["ntroduction"],
 		"titleLead": "I",
 		"label": "Chapter 01",
-		"description": "D3 is a javascript library for manipulating Data Object Model (DOM) tree in order to represent information visualy.",
+		"description": "D3 is a javascript library for manipulating Data Object Model (DOM) tree in order to represent information visualy. D3 uses the Selection API to do most of the things.",
 		"imageUrl": "assets/d3Logo.png",
 		"imageTitle": "d3 logo",
 		"type": "chapter",
 		"reverse": false
 	},
 	{
-		"title": ["Let's make some", "graphs already"],
-		"titleLead": null,
+		"title": ["et's make some", "graphs already"],
+		"titleLead": "L",
 		"label": "Chapter 02",
 		"description": "This chapter will show how to plot a set of data for coordinates, and double sets (more than one axis). It will show as well how to add scales, and animate elements.",
 		"imageUrl": "assets/chapter02ss.png",
+		"imageTitle": null,
+		"type": "chapter",
+		"reverse": true
+	},
+	{
+		"title": ["electing &", "Binding"],
+		"titleLead": "S",
+		"label": "Chapter 03",
+		"description": "You can easily bind data to produce an interactive and reactive visualization. With d3 you can bind data and use exit, merge, enter to select data and update it.",
+		"imageUrl": "assets/linkIcon.png",
+		"imageTitle": null,
+		"type": "chapter",
+		"reverse": false
+	},
+	{
+		"title": ["vents Interactivity", "and Animation"],
+		"titleLead": "E",
+		"label": "Chapter 04",
+		"description": "D3 allows you to handle events easily, we can explore in depth how to use mouse events, drag & drop and some othe data exploration techniques.",
+		"imageUrl": "assets/pointer.jpg",
 		"imageTitle": null,
 		"type": "chapter",
 		"reverse": true
