@@ -8,6 +8,8 @@
   <script type="text/javascript" src="../hide_menu.js"></script>
   <script type="text/javascript" src="drag_and_drop_behaviour.js"></script>
   <script type="text/javascript" src="exploring_graphs_with_the_mouse.js"></script>
+  <script type="text/javascript" src="smooth_transitions.js"></script>
+  <script type="text/javascript" src="timer_events.js"></script>
   <link rel="stylesheet" href="../index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
@@ -40,6 +42,34 @@
   <section>
     <h1 class="title">Drag & Drop Behaviour</h1>
     <svg class="svg1" id="drag-drop-behaviour"/>
+  </section>
+  <section>
+    <h1 class="title">Smooth Transitions</h1>
+    <svg class="svg3" id="smooth-transitions-1"/>
+    <svg class="svg3" id="smooth-transitions-2"/>
+  </section>
+  <section>
+    <h1 class="title">Timer Events [Lissajous]</h1>
+    <span class="d3-input">
+      <h5>[You can define the frequency bellow]</h5>
+      <label for="frequency1">F1
+        <input type="range" id="frequency1" name="frequency1" min="0" max="100" value="52" />
+      </label>
+      <hr>
+      <label for="frequency2">F2
+        <input type="range" id="frequency2" name="frequency2" min="0" max="100" value="59" />
+      </label>
+      <hr>
+      <div class="text-wrapper">
+        <div id="frequency-title" class="text-wrapper-title">Frequencies</div>
+        <div id="frequency-body" class="text-wrapper-body"></div>
+      </div>
+    </span>
+    <svg class="svg1" id="lissajous"/>
+  </section>
+  <section>
+    <h1 class="title">Timer Events [Voters]</h1>
+    <svg class="svg1" id="voters"/>
   </section>
 </body>
 </html>

@@ -49,6 +49,16 @@
 		"reverse": true
 	},
 	{
+		"title": ["vents, Interactivity", "and Animation"],
+		"titleLead": "E",
+		"label": "Chapter 04",
+		"description": "You can easily track user events and create animations with the transition API. D3 allows you to handle events with ease and analize data with different input sources.",
+		"imageUrl": "assets/animations.gif",
+		"imageTitle": "Lissajous & Voters",
+		"type": "chapter",
+		"reverse": false
+	},
+	{
 		"title": ["ead", "last"],
 		"titleLead": "L",
 		"label": "label",
