@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+#portfolio_svg:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+#result_portfolio_svg {
+	background-image: url("bg_purple.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 0.5rem;
+}

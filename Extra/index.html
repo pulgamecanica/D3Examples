@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>D3 For The Impatient Chapter02</title>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="../assets/icon.ico">
+  <script type="text/javascript" src="../d3.js"></script>
+  <script type="text/javascript" src="42Portfolio.js"></script>
+  <script type="text/javascript" src="../hide_menu.js"></script>
+  <link rel="stylesheet" href="../index.css"/>
+  <link rel="stylesheet" href="42Portfolio.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+  <nav id="navbar"><a href="../">menu</a><p>Extra</p><a href="../">menu</a></nav>
+  <section>
+    <span class="d3-input">
+      <h5>Divisions</h5>
+      <label for="verticalDivs">
+        <h6>Verticals</h6>
+        <input type="range" id="verticalDivs" name="verticalDivs" min="4" max="18" value="8" />
+      </label>
+      
+      <hr>
+      
+      <label for="horizontalDivs">
+        <h6>Horizontals</h6>
+        <input type="range" id="horizontalDivs" name="horizontalDivs" min="4" max="18" value="8" />
+      </label>
+      
+      <hr>
+      
+      <h5>Resolutions</h5>
+      <label for="sm"><h6>467x374 px</h6></label><br>
+      <input class="radioInput" type="radio" id="sm" name="res" value="sm" checked>
+      
+      <hr>
+
+      <label for="md"><h6>640x480 px</h6></label><br>
+      <input class="radioInput" type="radio" id="md" name="res" value="md">
+      
+      <hr>
+
+      <label for="lg"><h6>1152x864 px</h6></label> 
+      <input class="radioInput" type="radio" id="lg" name="res" value="lg">
+      <hr>
+    </span>
+    <svg id="portfolio_svg"></svg>
+  </section>
+  <section>
+    <svg id="result_portfolio_svg"></svg>
+  </section>
+  <section>
+    <svg version="1.1"
+       id="Calque_1" sodipodi:docname="42_logo.svg" inkscape:version="0.48.2 r9819" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 -200 960 960"
+       enable-background="new 0 -200 960 960" xml:space="preserve">
+      <polygon id="polygon5" points="32,412.6 362.1,412.6 362.1,578 526.8,578 526.8,279.1 197.3,279.1 526.8,-51.1 362.1,-51.1 
+        32,279.1 "/>
+      <polygon id="polygon7" points="597.9,114.2 762.7,-51.1 597.9,-51.1 "/>
+      <polygon id="polygon9" points="762.7,114.2 597.9,279.1 597.9,443.9 762.7,443.9 762.7,279.1 928,114.2 928,-51.1 762.7,-51.1 "/>
+      <polygon id="polygon11" points="928,279.1 762.7,443.9 928,443.9 "/>
+    </svg>
+  </section>
+</body>
+</html>
