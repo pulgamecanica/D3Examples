@@ -6,6 +6,9 @@
   <link rel="icon" type="image/x-icon" href="../assets/icon.ico">
   <script type="text/javascript" src="../d3.js"></script>
   <script type="text/javascript" src="../hide_menu.js"></script>
+  <script type="text/javascript" src="./symbols.js"></script>
+  <script type="text/javascript" src="./curves_and_lines.js"></script>
+  <script type="text/javascript" src="./pie_chart.js"></script>
   <link rel="stylesheet" href="../index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
@@ -13,8 +16,26 @@
   <nav id="navbar"><a href="../Chapter04/events_interactivity_and_animation.html">prev</a><p>Generators Components and Layouts</p><a href="../Chapter05/">next</a></nav>
   <center><h1>Chapter 05</h1></center>
   <section>
-    <h1 class="title">Timer Events [Voters]</h1>
-    <svg class="svg1" id="voters"/>
+    <h1 class="title">Symbols</h1>
+    <svg class="svg3" id="symbols">
+      <defs>
+        <g id="crosshair">
+          <circle cy="0" cx="0" r="2" fill="none"/>
+          <line x1="-3" y1="0" x2="-1" y2="0"/>
+          <line x1="1" y1="0" x2="3" y2="0"/>
+          <line x1="0" y1="-1" x2="0" y2="-3"/>
+          <line x1="0" y1="1" x2="0" y2="3"/>
+        </g>
+      </defs>
+    </svg>
+  </section>
+  <section>
+    <h1 class="title">Curves & Lines</h1>
+    <svg class="svg1" id="curves_and_lines"/>
+  </section>
+  <section>
+    <h1 class="title">Pie Charts</h1>
+    <svg class="svg2" id="pie_chart"/>
   </section>
 </body>
 </html>
