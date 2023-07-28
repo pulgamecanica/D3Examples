@@ -57,15 +57,5 @@
 		"imageTitle": "Lissajous & Voters",
 		"type": "chapter",
 		"reverse": false
-	},
-	{
-		"title": ["ead", "last"],
-		"titleLead": "L",
-		"label": "label",
-		"description": "description",
-		"imageUrl": "imageUrl",
-		"imageTitle": "imageTitle",
-		"type": "chapter",
-		"reverse": false
 	}
 ]
